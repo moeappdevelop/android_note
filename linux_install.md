@@ -13,12 +13,55 @@ JAVA_HOME=/opt/java/jdk1.8.0_40/
 CLASSPATH=$JAVA_HOME/lib/tools.jar
 PATH=$JAVA_HOME/bin:$PATH
 export JAVA_HOME CLASSPATH PATH
+
+2.5手动设置环境篇
+
+7.手动设置系统默认JDK
+
+在终端依次输入命令：
+
+sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0/bin/java 300
+
+update-alternatives: 使用 /usr/lib/java/jdk1.6.0/bin/java 来提供 /usr/bin/java (java)，于 自动模式 中。
+
+update-alternatives: 警告: 未将 /usr/bin/java 替换为链接。
+
+再次执行则提示：
+
+sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0/bin/java 300
+
+update-alternatives: 警告: 链接组 java 已损坏，故强制重新安装候选项 /usr/lib/java/jdk1.6.0/bin/javas
+
+将300改为1800后成功执行
+
+再依次执行：
+
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0/bin/javac 300
+
+sudo update-alternatives --install /usr/bin/javah javah /usr/lib/java/jdk1.6.0/bin/javah 300
+
+sudo update-alternatives --install /usr/bin/javap javap /usr/lib/java/jdk1.6.0/bin/javap 300
+
+sudo update-alternatives --install /usr/bin/jar jar /usr/lib/java/jdk1.6.0/bin/jar 300
+
+然后执行以下代码选择我们安装的JDK版本：
+
+sudo update-alternatives --config java
+
+6.验证JDK是否安装成功。执行“java -version”,若输出以下内容：，则说明安装成功：
+
+java -version
+
+java version "1.6.0"
+
+
 3.下载android-studio
 
 unzip android-studio-ide-143.2489090-linux.zip
 sudo mv android-studio /opt
 cd android-studio/bin/
  ./studio.sh
+ 
  
  4.再运行./studio.sh
 会一直卡在“Fetching Android SDK component information”上
