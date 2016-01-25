@@ -16,7 +16,7 @@ export JAVA_HOME CLASSPATH PATH
 
 2.5手动设置环境篇
 
-7.手动设置系统默认JDK
+手动设置系统默认JDK
 
 在终端依次输入命令：
 
