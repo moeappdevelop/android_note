@@ -77,6 +77,9 @@ http://www.android-studio.org/
 我下的是android-sdk_r24-linux.tgz
 sudo tar -xvf android-sdk_r24-linux.tgz -C /opt/
 
+5.5 Unable to run mksdcard SDK tool
+sudo apt-get install lib32z1 lib32ncurses5  lib32stdc++6
+
 6.Platform
 
 下载 platform-tools_r14-linux.zip (这个网站只有这个版本的下载)
