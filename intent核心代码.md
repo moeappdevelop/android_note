@@ -18,6 +18,15 @@ Int i=intent.getIntExtra("extra_data");
 Intent intent=new Intent(firstActivity.this,SecondActivity.class);
 startActivityForResult(intent,1);
 
+//接受（下一个Activity）返回数据 ;回调方法
+onActivityResult(int requestCode,int resultCode,Intent data){
+  switch(requestCode){
+  case :1
+    if(resultCode==RESULT_OK){
+      String returndata=data.getStrintExtra("data_return");
+    }
+  }
+}
 //返回数据给（上一个Activity）
 Intent intent=new Intent();
 intent.purExtra("data_return","hello ");
