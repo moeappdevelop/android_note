@@ -5,5 +5,9 @@
 4.singleinstance
 
 ``` 
+//核心代码
 
+getTaskId();
+
+//output:20
 ```
