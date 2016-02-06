@@ -106,3 +106,7 @@ public void onClick(View v){
     
 # 界面布局
 
+## LinearLayout
+
+## RelativeLayout
+
