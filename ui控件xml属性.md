@@ -68,3 +68,41 @@ progressBar.setProgress();
 
 ## AlertDialog
 
+代码用法
+``` java
+@Override
+public void onClick(View v){
+  switch(v.getId()){
+  case R.id.button:  
+    AlertDialog.Builder dialog =new AlertDialog.Builder(Activity.this);
+    dialog.setTitle("this is Dialog");
+    dialog.setMessage("sdfsdf");
+    dialog.setCancelable("false");
+    dialog.setPositiveButton("OK",new DialogInterface.OnClickListener(){
+      //确认按钮的点击事件
+      @Override
+      public void onClick(DialogInterface dialog,int which){}
+    });
+    dialog.setNegativeButton("Cancel",new DialogInterface.OnClickListener(){
+      @Override
+      public void onClick(DialogInterface dialog,int which){}
+    });
+    dialog.show();
+    break;
+  default:
+    break;
+  }
+}
+```
+
+## PorgressDialog
+方法与AlertDialog类似
+
+表示袋控件，不能通过back键取消掉
+    dialog.setCancelable("false");
+    
+关闭
+    progressDialog.dissmiss()
+    
+# 界面布局
+
