@@ -28,7 +28,11 @@ gone无
 android:gravity
 
 center
+布局对齐方向
 
+android:layout_gravity
+
+center
 ## Button
 
 ## EditText
