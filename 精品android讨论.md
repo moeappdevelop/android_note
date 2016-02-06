@@ -8,3 +8,5 @@
 [同时开发 Android 和 iOS apps 是一种什么样的体验？](https://www.zhihu.com/question/35676304#answer-23909327)
 
 [如何自学 Android 编程？](https://www.zhihu.com/question/26417244)
+
+[第一行代码 这本书怎么样？](https://www.zhihu.com/question/35493031)
