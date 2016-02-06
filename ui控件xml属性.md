@@ -1,4 +1,4 @@
-# ui控件xml属性
+# 一.ui控件xml属性
 
 ## 通用熟悉
 android:id
@@ -104,9 +104,38 @@ public void onClick(View v){
 关闭
     progressDialog.dissmiss()
     
-# 界面布局
+# 二.界面布局
 
 ## LinearLayout
+android:layout_width
+
+android:layout_height
+
+wrap_content
+
+match_parent(=full_parent)
+
+android:gravity
+
+top\center_vertical\bottom\
+
 
 ## RelativeLayout
 
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+android:layout_alignParentBottom="true"
+
+android:layout_above="@id/ffw"
+android:layout_toRightOf="@id/f32"
+
+## FrameLayout
+统统都是左上角对齐
+## TableLayout
+表格对齐
+合并单元格
+android:layout_span="2"
+
+拉伸表格宽度,将第二列拉伸
+android:stretchColumns="1"
