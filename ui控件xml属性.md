@@ -58,7 +58,13 @@ android:src
 imageView.setImageResource(R.drawable.jelly_bean);
 
 ```
+图片自适应
 
+android:scaleType
+```
+程序修改图片放大居中
+ Iconimg.setScaleType(ImageView.ScaleType.CENTER_CROP);
+```
 ## ProgressBar
 
 style="?android:attr/progressBarStyleHorizontal"
