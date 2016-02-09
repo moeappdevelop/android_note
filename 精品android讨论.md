@@ -10,3 +10,5 @@
 [如何自学 Android 编程？](https://www.zhihu.com/question/26417244)
 
 [第一行代码 这本书怎么样？](https://www.zhihu.com/question/35493031)
+
+[你见过哪些令你瞠目结舌的Android代码技巧?](https://www.zhihu.com/question/37929529)
