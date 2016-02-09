@@ -3,6 +3,7 @@
 
 ``` java
 
+
 public class ActivityCollector{
   public static List<Activity> activitys=new ArrayList<Activity>();
   
