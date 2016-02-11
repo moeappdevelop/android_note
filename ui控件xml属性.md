@@ -87,7 +87,7 @@ public void onClick(View v){
     AlertDialog.Builder dialog =new AlertDialog.Builder(Activity.this);
     dialog.setTitle("this is Dialog");
     dialog.setMessage("sdfsdf");
-    dialog.setCancelable("false");
+    dialog.setCancelable(false);
     dialog.setPositiveButton("OK",new DialogInterface.OnClickListener(){
       //确认按钮的点击事件
       @Override
