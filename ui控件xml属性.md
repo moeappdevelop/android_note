@@ -84,20 +84,26 @@ progressBar.setProgress();
 public void onClick(View v){
   switch(v.getId()){
   case R.id.button:  
-    AlertDialog.Builder dialog =new AlertDialog.Builder(Activity.this);
-    dialog.setTitle("this is Dialog");
-    dialog.setMessage("sdfsdf");
-    dialog.setCancelable(false);
-    dialog.setPositiveButton("OK",new DialogInterface.OnClickListener(){
-      //确认按钮的点击事件
-      @Override
-      public void onClick(DialogInterface dialog,int which){}
-    });
-    dialog.setNegativeButton("Cancel",new DialogInterface.OnClickListener(){
-      @Override
-      public void onClick(DialogInterface dialog,int which){}
-    });
-    dialog.show();
+    AlertDialog.Builder dialogBuilder =new AlertDialog.Builder(context);
+        dialogBuilder.setTitle("通知");
+        dialogBuilder.setMessage("  ～   ～ ");
+        dialogBuilder.setCancelable(false);
+        dialogBuilder.setPositiveButton("好", new DialogInterface.OnClickListener() {
+            //确认按钮的点击事件
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialogBuilder.setNegativeButton("不", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                
+            }
+        });
+        AlertDialog dialog=dialogBuilder.create();
+        dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);//设置AlertDialog类型，保证在广播接收器中可以正常弹出
+        dialog.show();
     break;
   default:
     break;
