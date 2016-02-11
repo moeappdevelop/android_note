@@ -23,3 +23,21 @@ public class ActivityCollector{
   }
 }
 ```
+## 基类
+
+``` java
+public class MoeActivity extends Activity {
+    @Override
+    protected void onCreate(Bundle saveInstanceState){
+        super.onCreate(saveInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        ActivityCollector.addActivity(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ActivityCollector.removeActivity(this);
+    }
+}
+```
