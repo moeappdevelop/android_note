@@ -135,6 +135,9 @@ android:gravity
 
 top\center_vertical\bottom\
 
+android:layout_weight
+当布局oriendtion为竖直，layout_weight可以决定横向权重。
+
 
 ## RelativeLayout
 
