@@ -5,6 +5,7 @@ Android “Only the original thread that created a view hierarchy can touch its 
 ## solution
 
 ```java
+///Activity.runOnUIThread
 runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
