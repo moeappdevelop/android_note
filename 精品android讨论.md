@@ -12,3 +12,6 @@
 [第一行代码 这本书怎么样？](https://www.zhihu.com/question/35493031)
 
 [你见过哪些令你瞠目结舌的Android代码技巧?](https://www.zhihu.com/question/37929529)
+
+## 设计方法论
+[MVP模式的优缺点](https://www.zhihu.com/question/35185744)
