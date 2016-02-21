@@ -19,3 +19,12 @@ SQLiteOpenHelper 是抽象类
     TEXT: "YYYY-MM-DD HH:MM:SS.SSS"
     REAL: 以Julian日期格式存储
     INTEGER: 以Unix时间形式保存数据值，即从1970-01-01 00:00:00到当前时间所流经的秒数。
+
+## sql 联合查询
+### 内联inner join
+
+### 左联left outer join
+
+### 右联right outer join
+
+### 全联full outer join
