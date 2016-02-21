@@ -24,11 +24,11 @@ SQLiteOpenHelper 是抽象类
 
 表1
 <table>
-   <th>
-      <td>id</td>
-      <td>stuid</td>
-      <td>name</td>
-   </th>
+   <tr>
+      <th>id</th>
+      <th>stuid</th>
+      <th>name</th>
+   </tr>
    <tr>
       <td>0</td>
       <td>201424</td>
@@ -43,12 +43,12 @@ SQLiteOpenHelper 是抽象类
 
 表2
 <table>
-   <th>
-      <td>id</td>
-      <td>stuid</td>
-      <td>projectname</td>
-      <td>score</td>
-   </th>
+   <tr>
+      <th>id</th>
+      <th>stuid</th>
+      <th>projectname</th>
+      <th>score</th>
+   </tr>
    <tr>
       <td>0</td>
       <td>201424</td>
