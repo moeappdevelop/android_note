@@ -21,6 +21,10 @@ SQLiteOpenHelper 是抽象类
     INTEGER: 以Unix时间形式保存数据值，即从1970-01-01 00:00:00到当前时间所流经的秒数。
 
 ## sql 联合查询
+|| *Year* || *Temperature (low)* || *Temperature (high)* ||
+|| 1900 || -10 || 25 ||
+|| 1910 || -15 || 30 ||
+|| 1920 || -10 || 32 ||
 表1
 
 |id|stuid|stuname|
