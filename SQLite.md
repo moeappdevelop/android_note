@@ -96,6 +96,8 @@ public MydatabaseHelper(Context context,String name,CursorFactory factory,int ve
 public void onCreate(SQliteDatabase db){
     db.execSQL(CREATE_BOOK);
 }
+
+// 正确的升级数据库的方法
 @Override
 public void onUppgrade(SQLiteDatabase db,int oldVersion,int newVersion){
     switch(oldVersion){
