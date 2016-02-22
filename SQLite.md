@@ -62,6 +62,13 @@ SQLiteOpenHelper 是抽象类
     <td>68</td>
    </tr>
 </table>
+##  使用sql 原生语句操作数据库
+
+    db.execSQL()
+    适合插入、更新、删除 数据
+    
+    db.rawQuery("")
+    适合查询 数据
 ### 内联inner join
 
 ### 左联left outer join
@@ -69,3 +76,32 @@ SQLiteOpenHelper 是抽象类
 ### 右联right outer join
 
 ### 全联full outer join
+
+## SQLliteOpenHelper代码
+
+``` java
+public class MydatabaseHelper extends SQLiteOpenHelper{
+    public static final String CREATE_BOOK="create table Book ("+
+    +"id integer primary key autoincrement,"
+    +"author text,"
+    +"price real,"
+    +"pages ingeger,"
+    +"name text)";
+}
+
+public MydatabaseHelper(Context context,String name,CursorFactory factory,int version){
+    super(context,name,factory,version);
+}
+@Override
+public void onCreate(SQliteDatabase db){
+    db.execSQL(CREATE_BOOK);
+}
+@Override
+public void onUppgrade(SQLiteDatabase db,int oldVersion,int newVersion){
+    switch(oldVersion){
+        case 1:
+            db.execSQL(CREATE_CATEGORY);
+        default:
+    }
+}
+```
