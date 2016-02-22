@@ -105,3 +105,16 @@ public void onUppgrade(SQLiteDatabase db,int oldVersion,int newVersion){
     }
 }
 ```
+## 事务操作
+``` java
+SQLiteDatabase db=dbHelper.getWritableDatabase();
+db.beginTransaction();//开启事务
+try{
+    db.delete("book",null,null);
+    各种操作
+}catch (Exception e){
+    e.printStackTrace();
+} finally{
+    db.endTransaction();//结束事务
+}
+```
