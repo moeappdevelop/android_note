@@ -24,3 +24,15 @@
   
   getContentResolver().delete(uri,"column2 = ?",new String[]("1"));
 ```
+### 创建内容提供器
+
+``` java
+public class Myprovider extends ContentProvider{
+  @Override
+  public boolean onCreate(){
+    return false;
+  }
+  
+  @
+}
+```
