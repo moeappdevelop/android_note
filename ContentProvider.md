@@ -6,9 +6,9 @@
   ContentResolver contentresolver=Context.getContextResolver();
   Uri uri=Uri.parse("content://com.example.app.provider/table1");
   
-  Cursor cursor=getContentResolver().query(uri,projection,selection,selectionArgs,sortOrder);
   
   1 查询操作
+  Cursor cursor=getContentResolver().query(uri,projection,selection,selectionArgs,sortOrder);
   
   if(sursor!=null){
     while(sursor.moveToNext(){
