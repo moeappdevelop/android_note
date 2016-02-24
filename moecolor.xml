@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="moeblack">#111</color>
+    <color name="moepink">#ff99cc</color>
+    <color name="moepink_press">#fa5bab</color>
+    <color name="white">#fff</color>
+    <color name="moesmoke">#f8f8f8</color>
+    <color name="moedark">#545454</color>
+    <color name="moelink">#0387b7</color>
+    <color name="moelink_press">#014d80</color>
+    <color name="moered">#f11544</color>
+</resources>
