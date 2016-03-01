@@ -44,3 +44,8 @@ Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
 JVM:          1.7.0_79 (Oracle Corporation 24.79-b02)
 OS:           Mac OS X 10.11.3 x86_64
 ```
+
+###　top build.gradle配置错误修改方法：
+```
+classpath 'com.android.tools.build:gradle:+'
+```
