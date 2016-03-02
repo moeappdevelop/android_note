@@ -89,7 +89,7 @@
 
 # 大总结
 ```xml
-<span style="font-size:18px"><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- 
     shape drawable xml文件中定义的一个几何图形，定义在res/drawable/目录下，文件名filename称为访问的资源ID
     在代码中通过R.drawable.filename进行访问，在xml文件中通过@[package:]drawable/filename进行访问。
@@ -189,5 +189,5 @@
         android:width="2dp"
         android:color="#dcdcdc"  
         /> 
-</shape></span>
+</shape>
 ```
