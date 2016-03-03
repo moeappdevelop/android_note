@@ -94,7 +94,7 @@ onTouch事件传递测试：
 结论:MyTextView处理了所有的TouchEvent。
  
 传递示意图:
-![](/imsg/onTouch2.png)
+![](/imgs/onTouch2.png)
 
 对MyLinearLayout2进行测试:
 测试一:当MyLinearLayout2的onInterceptTouchEvent方法返回true时，发送截断，事件不再向下传递而是直接给当前MyLinearLayout2的onTouchEvent处理，那后续事件(ACTION_DOWN的ACTION_MOVE或者ACTION_UP)不会触发。log信息如下:
