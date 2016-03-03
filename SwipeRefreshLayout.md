@@ -85,7 +85,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 另一个有趣的例子是在ListView中如何使用SwipeRefreshLayout。这是一个有趣的例子，因为在真正的应用程序中，我们经常会遇到这种情况。我们有一些带ListView的项目，希望对它们刷新。如果ListView是SwipeRefreshLayout唯一的孩子，不会出现任何问题，一切都会运行正常。在某些情况下，不仅有ListView可能还有其他的元素。假设有这样一个界面：
 
-![s](/imgs/SwipeRefresh2.png)
+![s](/imgs/SwipeRefresh_listview.png)
 
 这种情况有些复杂，如果我们向上滚动在ListView中项目，一切都如预期那样显示。但如果向下滚动，刷新过程开始列表项并不滚动。在这种情况下，我们可以使用一个小技巧，可以通过setEnabled（false）禁止使用刷新通知，当Listview中第一个项可见时而再启用它：
 ```
