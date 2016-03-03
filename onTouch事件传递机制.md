@@ -17,7 +17,16 @@ public boolean onInterceptTouchEvent(MotionEvent ev)    //  用于事件的拦�
 public boolean onTouchEvent(MotionEvent ev)     //处理事件
 
 本文的主要讨论对象就是ViewGroup类的控件嵌套时事件触发情况。
-对于ViewGroup类的控件，有一个很重要的方法，就是onInterceptTouchEvent()，用于处理事件并改变事件的传递方向，它的返回值是一个布尔值，决定了Touch事件是否要向它包含的子View继续传递，这个方法是从父View向子View传递。而方法onTouchEvent()，用于接收事件并处理，它的返回值也是一个布尔值，决定了事件及后续事件是否继续向上传递，这个方法是从子View向父View传递。touch事件在 onInterceptTouchEvent()和onTouchEvent以及各个childView间的传递机制完全取决于onInterceptTouchEvent()和onTouchEvent()的返回值。返回值为true表示事件被正确接收和处理了，返回值为false表示事件没有被处理，将继续传递下去。
+### 对于ViewGroup类的控件，有一个很重要的方法，就是onInterceptTouchEvent()
+
+用于处理事件并改变事件的传递方向，它的返回值是一个布尔值，决定了Touch事件是否要向它包含的子View继续传递，这个方法是从父View向子View传递。
+
+###而方法onTouchEvent()
+
+用于接收事件并处理，它的返回值也是一个布尔值，决定了事件及后续事件是否继续向上传递，这个方法是从子View向父View传递。
+
+
+touch事件在onInterceptTouchEvent()和onTouchEvent以及各个childView间的传递机制完全取决于onInterceptTouchEvent()和onTouchEvent()的返回值。返回值为true表示事件被正确接收和处理了，返回值为false表示事件没有被处理，将继续传递下去。
 ACTION_DOWN事件会传到某个ViewGroup类的onInterceptTouchEvent，如果返回false，则DOWN事件继续向子ViewGroup类的onInterceptTouchEvent传递，如果子View不是ViewGroup类的控件，则传递给它的onTouchEvent。
 如果onInterceptTouchEvent返回了true,则DOWN事件传递给它的onTouchEvent，不再继续传递，并且之后的后续事件也都传递给它的onTouchEvent。
 如果某View的onTouchEvent返回了false，则DOWN事件继续向其父ViewGroup类的onTouchEvent传递；如果返回了true，则后续事件会直接传递给其onTouchEvent继续处理。（后续事件只会传递给对于必要事件ACTION_DOWN返回了true的onTouchEvent。
