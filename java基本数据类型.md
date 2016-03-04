@@ -22,5 +22,20 @@ i.intValue()才能提取i的值
 使用场合，例如说
 往ArrayList里面add，必须add的是Object
 而int不是对象，就只能把Integer添加进去
+
+
+List转换为Array可以这样处理：
+
+ArrayList<String> list=new ArrayList<String>();
+
+String[] strings = new String[list.size()];
+
+list.toArray(strings);
+反过来，如果要将数组转成List怎么办呢？如下：
+
+String[] s = {"a","b","c"};
+List list = java.util.Arrays.asList(s);
+
+
 ## java 中的instanceof
 java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例
