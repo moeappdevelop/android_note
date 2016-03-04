@@ -22,3 +22,5 @@ i.intValue()才能提取i的值
 使用场合，例如说
 往ArrayList里面add，必须add的是Object
 而int不是对象，就只能把Integer添加进去
+## java 中的instanceof
+java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例
