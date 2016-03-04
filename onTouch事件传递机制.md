@@ -27,11 +27,20 @@ public boolean onTouchEvent(MotionEvent ev)     //处理事件
 
 
 touch事件在onInterceptTouchEvent()和onTouchEvent以及各个childView间的传递机制完全取决于onInterceptTouchEvent()和onTouchEvent()的返回值。返回值为true表示事件被正确接收和处理了，返回值为false表示事件没有被处理，将继续传递下去。
+
 ACTION_DOWN事件会传到某个ViewGroup类的onInterceptTouchEvent，如果返回false，则DOWN事件继续向子ViewGroup类的onInterceptTouchEvent传递，如果子View不是ViewGroup类的控件，则传递给它的onTouchEvent。
+
 如果onInterceptTouchEvent返回了true,则DOWN事件传递给它的onTouchEvent，不再继续传递，并且之后的后续事件也都传递给它的onTouchEvent。
+
 如果某View的onTouchEvent返回了false，则DOWN事件继续向其父ViewGroup类的onTouchEvent传递；如果返回了true，则后续事件会直接传递给其onTouchEvent继续处理。（后续事件只会传递给对于必要事件ACTION_DOWN返回了true的onTouchEvent。
-onInterceptTouchEvent()用于处理事件并改变事件的传递方向。处理事件这个不用说了，你在函数内部编写代码处理就可以了。而决定传递方向的是返回值，返回为false时事件会传递给子控件的onInterceptTouchEvent()；返回值为true时事件会传递给当前控件的onTouchEvent()，而不在传递给子控件，这就是所谓的Intercept(截断)。
-onTouchEvent() 用于处理事件，返回值决定当前控件是否消费（consume）了这个事件。可能你要问是否消费了又区别吗，反正我已经针对事件编写了处理代码？答案是有区别！比如ACTION_MOVE或者ACTION_UP发生的前提是一定曾经发生了ACTION_DOWN，如果你没有消费ACTION_DOWN，那么系统会认为ACTION_DOWN没有发生过，所以ACTION_MOVE或者ACTION_UP就不能被捕获。
+
+onInterceptTouchEvent()用于处理事件并改变事件的传递方向。处理事件这个不用说了，你在函数内部编写代码处理就可以了。而决定传递方向的是返回值，返回为false时事件会传递给子控件的onInterceptTouchEvent()；
+
+返回值为true时事件会传递给当前控件的onTouchEvent()，而不在传递给子控件，这就是所谓的Intercept(截断)。
+
+onTouchEvent() 用于处理事件，返回值决定当前控件是否消费（consume）了这个事件。
+可能你要问是否消费了又区别吗，反正我已经针对事件编写了处理代码？答案是有区别！比如ACTION_MOVE或者ACTION_UP发生的前提是一定曾经发生了ACTION_DOWN，如果你没有消费ACTION_DOWN，那么系统会认为ACTION_DOWN没有发生过，所以ACTION_MOVE或者ACTION_UP就不能被捕获。
+
 在没有重写onInterceptTouchEvent()和onTouchEvent()的情况下(他们的返回值都是false)。
  
 onTouch事件传递测试：
