@@ -10,19 +10,13 @@ android开发资料分数在网络与有经验的开发者大脑中。于是我�
 
 [android-simple](https://github.com/timeloveboy/android-simple)
 
-生命周期
-
-intent 拨号
-
-自定义xml以及include语法
-
-chat界面制作方法
-
-contentprivider获取通讯录
-
-notification方法
-
-contentprivider读取所有短信
+>生命周期
+>intent 拨号
+>自定义xml以及include语法
+>chat界面制作方法
+>contentprivider获取通讯录
+>notification方法
+>contentprivider读取所有短信
 ## 2.进阶知识
 
 ## 3.高阶知识
