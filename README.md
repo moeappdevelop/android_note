@@ -25,7 +25,26 @@ android开发资料分数在网络与有经验的开发者大脑中。于是我�
 >contentprivider读取所有短信
 
 ## 2.进阶知识
+[android-middle](https://github.com/timeloveboy/android-middle)
+> middle broadcast系统播放网络状况的通知
+
+> file 应用程序文件夹，文件操作
+
+> mvp 开发模式学习demo
+
+> takeoffline 一个强制下线的demo
+
+> sqlite 相关操作方法
+
+### contentProvider
+> cameracut 打开摄像程序并截取一部分，传回该activity
+
+> choosephoto 通过contentProvider选择一张图片，传回该activity
+
+> musicplayer 播放应用的mediaplayer应用操作
 
 ## 3.高阶知识
-
+[android-advanced](https://github.com/timeloveboy/android-advanced)
+> imageview，相册大图浏览器（支持放缩、左右切换轮播图）
 ## 4.杂谈
+
