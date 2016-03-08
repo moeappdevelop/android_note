@@ -39,3 +39,14 @@ List list = java.util.Arrays.asList(s);
 
 ## java 中的instanceof
 java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例
+
+
+ ## java for 循环
+ 
+```
+int arr[] = {2, 3, 1};   
+27          System.out.println("----1----排序前的一维数组");   
+28         for (int x : arr) {   
+29              System.out.println(x); //逐个输出数组元素的值   
+30          }   
+```
