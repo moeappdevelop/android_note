@@ -56,3 +56,5 @@ public void onClick(View v) {
 ```
 ## 异步消息处理机制
 ![](/imgs/android_message.png)
+
+## AsyncTask异步任务
