@@ -64,6 +64,9 @@ android:scaleType
 ```
 程序修改图片放大居中
  Iconimg.setScaleType(ImageView.ScaleType.CENTER_CROP);
+ 
+ 
+ fixxy,拉伸填充
 ```
 ## ProgressBar
 
