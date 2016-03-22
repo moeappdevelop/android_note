@@ -15,7 +15,7 @@
 [你见过哪些令你瞠目结舌的Android代码技巧?](https://www.zhihu.com/question/37929529)
 ## 设计方法论
 [MVP模式的优缺点](https://www.zhihu.com/question/35185744)
-
+[用多个 activity，还是单 activity 配合 fragment？](https://www.zhihu.com/question/39662488)
 [Awesome 系列之 Android 轮子大全](https://github.com/JStumpp/awesome-android)
 ## 其它杂谈
 [同时开发 Android 和 iOS apps 是一种什么样的体验？](https://www.zhihu.com/question/35676304#answer-23909327)
