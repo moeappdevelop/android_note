@@ -134,9 +134,15 @@ wrap_content
 
 match_parent(=full_parent)
 
+文本对齐方向
+
 android:gravity
 
-top\center_vertical\bottom\
+center
+
+布局对齐方向(当orientation为vehicle时候起上下作用)
+
+android:layout_gravity
 
 android:layout_weight
 当布局oriendtion为竖直，layout_weight可以决定横向权重。
