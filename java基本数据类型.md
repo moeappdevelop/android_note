@@ -49,3 +49,15 @@ for (int x : arr) {
 System.out.println(x); //逐个输出数组元素的值   
 
 ```
+
+## java inner class
+```
+public class A{
+  public class B{
+     
+  }
+}
+A a=new A();
+A.B b=a.new B();
+
+```
