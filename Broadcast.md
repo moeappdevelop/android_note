@@ -58,6 +58,7 @@ class networkchangereceiver extends BroadcastReveicer{
 }
 ```
 ## 本地广播
+> 相对BroadcastReceiver，它只能用于应用内通信，安全性更好，同时拥有更高的运行效率。也是需要发送应用内广播时的官方推荐。
 LocalBroadcastManager,仅支持代码注册
 ``` java
 public class MainActivity extends Activity{
