@@ -33,6 +33,19 @@ center
 android:layout_gravity
 
 center
+
+在xml中
+
+android:ellipsize = "end"　　  省略号在结尾
+
+android:ellipsize = "start" 　　省略号在开头
+
+android:ellipsize = "middle"     省略号在中间
+
+android:ellipsize = "marquee"  跑马灯
+
+最好加一个约束android:singleline = "true"
+
 ## Button
 
 ## EditText
