@@ -1,1 +1,1 @@
-![](img/3d.png)
+![](imgs/3d.png)
