@@ -35,7 +35,11 @@ list.toArray(strings);
 
 String[] s = {"a","b","c"};
 List list = java.util.Arrays.asList(s);
-
+## java list copy方法
+```
+ List<Xunzhang> list_data = new ArrayList<>(Arrays.asList(new Xunzhang[list_localall.size()]));
+ Collections.copy(list_data,list_localall);
+```
 
 ## java 中的instanceof
 java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例
